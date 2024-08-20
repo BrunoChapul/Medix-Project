@@ -1,5 +1,16 @@
+import Banner from "../components/Banner";
+import Container from "../components/Global/Container";
+import TopBar from "../components/Topbar/TopBar";
+
 function Home() {
-  return <div>Olá</div>;
+  return (
+    <>
+      <TopBar />
+      <Container>
+        <Banner />
+      </Container>
+    </>
+  );
 }
 
 export default Home;

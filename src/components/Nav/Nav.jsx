@@ -1,25 +1,23 @@
 import styled from "styled-components";
-import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
 import LogoImg from "/images/logo.svg";
-import Btn from "./Button";
+
+// Components
+import Links from "./Links";
+
+// Icons
+import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
 
 function Nav() {
   return (
     <Container>
-      <Logo src={LogoImg} />
-      <Content>
+      <LogoImage src={LogoImg} alt="Logo" />
+      <NavContent>
         <Title>Tools</Title>
         <Links>
-          <Btn
-            txtColor="#FFF"
-            bgColor="linear-gradient(to left, #214cb5, #2380ea)"
-            align="left"
-          >
-            <SpaceDashboardIcon />
-            Dashboard
-          </Btn>
+          <SpaceDashboardIcon aria-label="Dashboard icon" />
+          Dashboard
         </Links>
-      </Content>
+      </NavContent>
     </Container>
   );
 }
@@ -30,13 +28,13 @@ const Container = styled.nav`
   padding: 2rem;
 `;
 
-const Logo = styled.img`
+const LogoImage = styled.img`
   display: block;
   margin: 0 auto;
   width: 80%;
 `;
 
-const Content = styled.div`
+const NavContent = styled.section`
   margin-top: 2rem;
 `;
 
@@ -46,11 +44,6 @@ const Title = styled.h1`
   font-weight: 700;
   font-size: 0.8rem;
   margin-bottom: 1rem;
-`;
-
-const Links = styled.div`
-  display: grid;
-  gap: 1rem;
 `;
 
 export default Nav;

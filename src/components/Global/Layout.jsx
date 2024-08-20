@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Nav from "./Nav";
+import Nav from "../Nav/Nav";
 
 function Layout({ children }) {
   return (
@@ -10,7 +10,7 @@ function Layout({ children }) {
   );
 }
 
-const Container = styled.div`
+const Container = styled.section`
   display: grid;
   grid-template-columns: 15% 85%;
   width: 100vw;
