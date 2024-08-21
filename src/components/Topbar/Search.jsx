@@ -28,9 +28,9 @@ const Label = styled.label`
 
 const Input = styled.input`
   border-radius: 0.4rem;
-  border: 0.01rem solid rgba(000, 000, 000, 0.2);
+  border: 0.01rem solid ${(props) => props.theme.colors.main + "33"};
   padding: 0.8rem 1rem 0.8rem 3rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: ${(props) => props.theme.font.primary};
   outline: 0;
 
   &::placeholder {

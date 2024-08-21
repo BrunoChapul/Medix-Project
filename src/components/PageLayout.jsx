@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Nav from "../Nav/Nav";
+import Nav from "./Nav/Nav";
 
 function Layout({ children }) {
   return (

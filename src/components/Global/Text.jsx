@@ -10,9 +10,9 @@ function Text({ children, size, color, margin }) {
 
 const P = styled.p`
   font-size: ${(props) => props.$size || "1rem"};
-  color: ${(props) => props.$txtColor || "#000"};
+  color: ${(props) => props.$txtColor || props.theme.colors.txt};
   margin: ${(props) => props.$margin || 0};
-  font-family: "Montserrat", sans-serif;
+  font-family: ${(props) => props.theme.font.primary};
 `;
 
 export default Text;

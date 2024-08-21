@@ -1,14 +1,15 @@
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 
 // Comp
 import Btn from "../Global/Btn";
 
 function Links({ children }) {
+  const theme = useTheme();
   return (
     <Content>
       <Btn
-        txtColor="#FFF"
-        bgColor="linear-gradient(to left, #214cb5, #2380ea)"
+        txtColor={theme.colors.default}
+        bgColor={theme.colors.primary}
         align="left"
       >
         {children}

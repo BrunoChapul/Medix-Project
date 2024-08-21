@@ -1,23 +1,33 @@
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 import Doctor from "/images/doctor.png";
 
 // Components
-import Btn from "./Global/Btn";
-import Text from "./Global/Text";
-import Title from "./Global/Title";
+import Btn from "../Global/Btn";
+import Text from "../Global/Text";
+import Title from "../Global/Title";
 
 function Banner() {
+  const theme = useTheme();
   return (
     <Content>
       <div>
-        <Title size="2.6rem" color="#FFF" weight="bold" margin="0 0 1rem 0">
+        <Title
+          size="2.6rem"
+          color={theme.colors.default}
+          weight="bold"
+          margin="0 0 1rem 0"
+        >
           Need to find a doctor? <br />
           Go online with us!
         </Title>
-        <Text size="1rem" color="#FFF" margin="0 0 1rem 0">
+        <Text size="1rem" color={theme.colors.default} margin="0 0 1rem 0">
           Get your first medical service at your home.
         </Text>
-        <Btn txtColor="#2380ea" hvrBgColor="#214cb5" hvrColor="#FFF">
+        <Btn
+          txtColor={theme.colors.primary}
+          hvrBgColor={theme.colors.secondary}
+          hvrColor={theme.colors.default}
+        >
           Find now
         </Btn>
       </div>
@@ -27,6 +37,7 @@ function Banner() {
 }
 
 const Content = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,7 +70,7 @@ const Content = styled.div`
       transparent 26%
     );
   background-size: 3em 3em;
-  background-color: #2380ea;
+  background-color: ${(props) => props.theme.colors.primary};
   opacity: 1;
   border-radius: 0.8rem;
   padding: 3rem 5rem 3rem 3rem;

@@ -15,7 +15,7 @@ function Nav() {
         <Title>Tools</Title>
         <Links>
           <SpaceDashboardIcon aria-label="Dashboard icon" />
-          Dashboard
+          Overview
         </Links>
       </NavContent>
     </Container>
@@ -23,7 +23,7 @@ function Nav() {
 }
 
 const Container = styled.nav`
-  box-shadow: -5px 0px 7px #01120a;
+  box-shadow: -5px 0px 7px ${(props) => props.theme.colors.main};
   flex-wrap: wrap;
   padding: 2rem;
 `;
@@ -39,8 +39,8 @@ const NavContent = styled.section`
 `;
 
 const Title = styled.h1`
-  color: #454858;
-  font-family: "Montserrat", sans-serif;
+  color: ${(props) => props.theme.colors.main};
+  font-family: ${(props) => props.theme.font.primary};
   font-weight: 700;
   font-size: 0.8rem;
   margin-bottom: 1rem;

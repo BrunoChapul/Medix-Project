@@ -1,13 +1,22 @@
-import Layout from "./components/Global/Layout";
-import Home from "./pages/Home";
+// Temas
+import { ThemeProvider } from "styled-components";
+import theme from "./styles/theme";
+
+// Containers
+import PageLayout from "./components/PageLayout";
 import GlobalStyle from "./styles/GlobalStyle";
+
+// Components
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <Layout>
-      <GlobalStyle />
-      <Home />
-    </Layout>
+    <ThemeProvider theme={theme}>
+      <PageLayout>
+        <GlobalStyle />
+        <Home />
+      </PageLayout>
+    </ThemeProvider>
   );
 }
 

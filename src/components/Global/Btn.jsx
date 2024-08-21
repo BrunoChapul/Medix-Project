@@ -17,16 +17,17 @@ function Btn({ children, bgColor, txtColor, hvrBgColor, hvrColor, align }) {
 const Button = styled.button`
   padding: 0.6rem 1rem;
   font-size: 1rem;
-  background: ${(props) => props.$bgColor || "#FFF"};
-  color: ${(props) => props.$txtColor || "#000"};
+  background: ${(props) => props.$bgColor || props.theme.colors.default};
+  color: ${(props) => props.$txtColor || props.theme.colors.txt};
   border: none;
   border-radius: 0.8rem;
   text-align: ${(props) => props.$align};
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: ${(props) => props.theme.font.primary};
   transition: all 0.3s;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 
   &:hover {
     background: ${(props) => props.$hvrBgColor};

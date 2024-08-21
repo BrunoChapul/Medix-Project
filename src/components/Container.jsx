@@ -6,6 +6,9 @@ function Container({ children, style }) {
 
 const Content = styled.div`
   padding: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 `;
 
 export default Container;

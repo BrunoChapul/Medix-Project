@@ -8,12 +8,12 @@ function Text({ children, size, color, weight, margin }) {
   );
 }
 
-const H1 = styled.p`
+const H1 = styled.h1`
   font-size: ${(props) => props.$size || "1rem"};
-  color: ${(props) => props.$txtColor || "#000"};
+  color: ${(props) => props.$txtColor || props.theme.colors.txt};
   font-weight: ${(props) => props.$fontWeight || "unset"};
   margin: ${(props) => props.$margin || 0};
-  font-family: "Montserrat", sans-serif;
+  font-family: ${(props) => props.theme.font.primary};
 `;
 
 export default Text;

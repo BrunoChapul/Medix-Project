@@ -1,13 +1,16 @@
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 
 // Components
 import Search from "./Search";
 import Notification from "./Notification";
-import Container from "../Global/Container";
+import Container from "../Container";
 
 function TopBar() {
+  const theme = useTheme();
   return (
-    <Container style={{ borderBottom: "0.1rem solid rgba(000, 000, 000, .2)" }}>
+    <Container
+      style={{ borderBottom: `0.1rem solid ${theme.colors.main + "33"}` }}
+    >
       <Nav>
         <div>
           <User>Hi Bruno Chapul</User>
@@ -23,19 +26,20 @@ function TopBar() {
 }
 
 const Nav = styled.nav`
+  width: 100%;
   display: flex;
   justify-content: space-between;
 `;
 
 const User = styled.p`
+  font-family: ${(props) => props.theme.font.primary};
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
   margin-bottom: 0.4rem;
 `;
 
 const Message = styled.h1`
+  font-family: ${(props) => props.theme.font.primary};
   font-size: 1.4rem;
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 `;
 
