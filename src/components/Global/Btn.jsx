@@ -23,7 +23,7 @@ const Button = styled.button`
   border-radius: 0.8rem;
   text-align: ${(props) => props.$align};
   cursor: pointer;
-  font-family: ${(props) => props.theme.font.primary};
+  font-family: ${(props) => props.theme.typography.regularFontFamily};
   transition: all 0.3s;
   display: flex;
   align-items: center;

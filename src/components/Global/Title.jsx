@@ -13,7 +13,7 @@ const H1 = styled.h1`
   color: ${(props) => props.$txtColor || props.theme.colors.txt};
   font-weight: ${(props) => props.$fontWeight || "unset"};
   margin: ${(props) => props.$margin || 0};
-  font-family: ${(props) => props.theme.font.primary};
+  font-family: ${(props) => props.theme.typography.regularFontFamily};
 `;
 
 export default Text;

@@ -47,7 +47,7 @@ const NotificationBadge = styled.p`
 
 const BadgeCount = styled.span`
   color: ${(props) => props.theme.colors.default};
-  font-family: ${(props) => props.theme.font.primary};
+  font-family: ${(props) => props.theme.typography.fontFamily};
 `;
 
 export default Notification;

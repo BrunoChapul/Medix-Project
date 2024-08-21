@@ -9,7 +9,11 @@ function TopBar() {
   const theme = useTheme();
   return (
     <Container
-      style={{ borderBottom: `0.1rem solid ${theme.colors.main + "33"}` }}
+      style={{
+        paddingTop: "1rem",
+        paddingBottom: "1rem",
+        borderBottom: `0.1rem solid ${theme.colors.main + "33"}`,
+      }}
     >
       <Nav>
         <div>
@@ -32,13 +36,13 @@ const Nav = styled.nav`
 `;
 
 const User = styled.p`
-  font-family: ${(props) => props.theme.font.primary};
+  font-family: ${(props) => props.theme.typography.fontFamily};
   font-size: 1rem;
   margin-bottom: 0.4rem;
 `;
 
 const Message = styled.h1`
-  font-family: ${(props) => props.theme.font.primary};
+  font-family: ${(props) => props.theme.typography.fontFamily};
   font-size: 1.4rem;
   font-weight: 500;
 `;

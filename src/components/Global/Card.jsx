@@ -6,7 +6,7 @@ function Card({ children }) {
 
 const Container = styled.div`
   width: auto;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 0.8rem;
   box-shadow: 5px 5px 15px #dfdfdf;
 `;

@@ -5,10 +5,10 @@ function Container({ children, style }) {
 }
 
 const Content = styled.div`
-  padding: 1.4rem;
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 `;
 
 export default Container;

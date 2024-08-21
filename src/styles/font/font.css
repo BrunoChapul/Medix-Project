@@ -1,1 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "ccboiRegular";
+  src: url("/fonts/ccboiRegular.woff2");
+}
+
+@font-face {
+  font-family: "ccboiBold";
+  src: url("/fonts/ccboiBold.woff2");
+}

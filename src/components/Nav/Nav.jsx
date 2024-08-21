@@ -40,7 +40,7 @@ const NavContent = styled.section`
 
 const Title = styled.h1`
   color: ${(props) => props.theme.colors.main};
-  font-family: ${(props) => props.theme.font.primary};
+  font-family: ${(props) => props.theme.typography.boldFontFamily};
   font-weight: 700;
   font-size: 0.8rem;
   margin-bottom: 1rem;

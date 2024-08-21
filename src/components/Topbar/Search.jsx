@@ -30,7 +30,7 @@ const Input = styled.input`
   border-radius: 0.4rem;
   border: 0.01rem solid ${(props) => props.theme.colors.main + "33"};
   padding: 0.8rem 1rem 0.8rem 3rem;
-  font-family: ${(props) => props.theme.font.primary};
+  font-family: ${(props) => props.theme.typography.fontFamily};
   outline: 0;
 
   &::placeholder {

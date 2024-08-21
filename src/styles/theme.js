@@ -1,3 +1,5 @@
+import "./font/font.css";
+
 const theme = {
   colors: {
     primary: "#237FEA",
@@ -6,8 +8,9 @@ const theme = {
     main: "#01120A",
     default: "#FFF",
   },
-  font: {
-    primary: "'Montserrat', sans-serif",
+  typography: {
+    regularFontFamily: "ccboiRegular, sans-serif",
+    boldFontFamily: "ccboiBold, sans-serif",
   },
 };
 
