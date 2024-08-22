@@ -1,5 +1,4 @@
 import styled, { useTheme } from "styled-components";
-import Card from "../Global/Card";
 
 // Icons
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
@@ -8,7 +7,8 @@ import EventBusyIcon from "@mui/icons-material/EventBusy";
 import PaidIcon from "@mui/icons-material/Paid";
 
 // Components
-import Text from "../Global/Text";
+import Text from "../Ui/Text";
+import Card from "../Ui/Card";
 
 function BookingInfo() {
   const theme = useTheme();

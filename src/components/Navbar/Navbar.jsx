@@ -1,9 +1,9 @@
 import styled, { useTheme } from "styled-components";
-import LogoImg from "/images/logo.svg";
+import LogoImg from "../../_assets/images/logo.svg";
 
 // Components
-import Text from "../Global/Text";
-import Btn from "../Global/Btn";
+import Text from "../Ui/Text";
+import Btn from "../Ui/Btn";
 
 // Icons
 import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";

@@ -1,6 +1,6 @@
 // Components
 import Banner from "../components/Home/Banner";
-import Container from "../components/Container";
+import Container from "../containers/Container";
 import TopBar from "../components/Topbar/TopBar";
 import BookingInfos from "../components/Home/BookingInfos";
 

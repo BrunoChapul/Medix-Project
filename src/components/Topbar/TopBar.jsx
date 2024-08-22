@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Components
 import Search from "./Search";
 import Notification from "./Notification";
-import Text from "../Global/Text";
+import Text from "../Ui/Text";
 
 function TopBar() {
   return (

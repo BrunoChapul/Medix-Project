@@ -1,9 +1,9 @@
 import styled, { useTheme } from "styled-components";
-import Doctor from "/images/doctor.png";
+import Doctor from "../../_assets/images/doctor.png";
 
 // Components
-import Btn from "../Global/Btn";
-import Text from "../Global/Text";
+import Btn from "../Ui/Btn";
+import Text from "../Ui/Text";
 
 function Banner() {
   const theme = useTheme();

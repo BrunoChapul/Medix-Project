@@ -1,4 +1,4 @@
-import "./font/font.css";
+import "../fonts/font.css";
 
 const theme = {
   colors: {

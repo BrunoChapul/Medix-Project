@@ -1,13 +1,13 @@
 // Temas
 import { ThemeProvider } from "styled-components";
-import theme from "./styles/theme";
+import theme from "./_assets/scripts/theme";
 
 // Router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Containers
-import PageLayout from "./components/PageLayout";
-import GlobalStyle from "./styles/GlobalStyle";
+import PageLayout from "./containers/PageLayout";
+import GlobalStyle from "./_assets/styles/GlobalStyle";
 
 // Components
 import Overview from "./pages/Overview";

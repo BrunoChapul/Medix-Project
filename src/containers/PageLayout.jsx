@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import Nav from "./Nav/Nav";
+import Navbar from "../components/Navbar/Navbar";
 
 function Layout({ children }) {
   return (
     <Container>
-      <Nav />
+      <Navbar />
       <main>{children}</main>
     </Container>
   );
