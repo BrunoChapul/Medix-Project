@@ -4,14 +4,14 @@ import Doctor from "/images/doctor.png";
 // Components
 import Btn from "../Global/Btn";
 import Text from "../Global/Text";
-import Title from "../Global/Title";
 
 function Banner() {
   const theme = useTheme();
+
   return (
     <Content>
       <div>
-        <Title
+        <Text
           size="2.6rem"
           color={theme.colors.default}
           weight="bold"
@@ -19,7 +19,7 @@ function Banner() {
         >
           Need to find a doctor? <br />
           Go online with us!
-        </Title>
+        </Text>
         <Text size="1rem" color={theme.colors.default} margin="0 0 1rem 0">
           Get your first medical service at your home.
         </Text>

@@ -3,7 +3,6 @@ import Banner from "../components/Home/Banner";
 import Container from "../components/Container";
 import TopBar from "../components/Topbar/TopBar";
 import BookingInfos from "../components/Home/BookingInfos";
-import Wrapper from "../components/Home/Appointment/Wrapper";
 
 function Home() {
   return (
@@ -12,7 +11,6 @@ function Home() {
       <Container>
         <Banner />
         <BookingInfos />
-        <Wrapper />
       </Container>
     </>
   );

@@ -7,6 +7,9 @@ import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import EventBusyIcon from "@mui/icons-material/EventBusy";
 import PaidIcon from "@mui/icons-material/Paid";
 
+// Components
+import Text from "../Global/Text";
+
 function BookingInfo() {
   const theme = useTheme();
 
@@ -38,27 +41,29 @@ function BookingInfo() {
   ];
 
   return (
-    <Grid>
+    <Container>
       {bookings.map((booking) => (
         <Card key={booking.id}>
           <Wrapper>
             <Icon>{booking.icon}</Icon>
             <Info>
-              <Total>{booking.total}</Total>
-              <TotalName>{booking.name}</TotalName>
+              <Text size="2.3rem" weight="bold" width="100%">
+                {booking.total}
+              </Text>
+              <Text>{booking.name}</Text>
             </Info>
           </Wrapper>
         </Card>
       ))}
-    </Grid>
+    </Container>
   );
 }
 
-const Grid = styled.div`
+const Container = styled.div`
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  width: 100%;
 `;
 
 const Wrapper = styled.div`
@@ -81,20 +86,6 @@ const Info = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-`;
-
-const Total = styled.h2`
-  color: ${(props) => props.theme.colors.main};
-  font-family: ${(props) => props.theme.typography.boldFontFamily};
-  width: 100%;
-  font-size: 2.3rem;
-  font-weight: bold;
-`;
-
-const TotalName = styled.p`
-  color: ${(props) => props.theme.colors.main};
-  width: 100%;
-  font-size: 1rem;
 `;
 
 export default BookingInfo;

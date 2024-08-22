@@ -1,50 +1,32 @@
-import styled, { useTheme } from "styled-components";
+import styled from "styled-components";
 
 // Components
 import Search from "./Search";
 import Notification from "./Notification";
-import Container from "../Container";
+import Text from "../Global/Text";
 
 function TopBar() {
-  const theme = useTheme();
   return (
-    <Container
-      style={{
-        paddingTop: "1rem",
-        paddingBottom: "1rem",
-        borderBottom: `0.1rem solid ${theme.colors.main + "33"}`,
-      }}
-    >
-      <Nav>
-        <div>
-          <User>Hi Bruno Chapul</User>
-          <Message>Welcome back</Message>
-        </div>
-        <SearchContent>
-          <Search />
-          <Notification />
-        </SearchContent>
-      </Nav>
-    </Container>
+    <Nav>
+      <div>
+        <Text size="1rem">Hi Bruno Chapul</Text>
+        <Text size="1.8rem" weight="bold" margin=".4rem 0 0 0">
+          Welcome back
+        </Text>
+      </div>
+      <SearchContent>
+        <Search />
+        <Notification />
+      </SearchContent>
+    </Nav>
   );
 }
 
 const Nav = styled.nav`
-  width: 100%;
   display: flex;
   justify-content: space-between;
-`;
-
-const User = styled.p`
-  font-family: ${(props) => props.theme.typography.fontFamily};
-  font-size: 1rem;
-  margin-bottom: 0.4rem;
-`;
-
-const Message = styled.h1`
-  font-family: ${(props) => props.theme.typography.fontFamily};
-  font-size: 1.4rem;
-  font-weight: 500;
+  padding: 1rem 2rem;
+  border-bottom: 0.1rem solid ${(props) => props.theme.colors.main + 33};
 `;
 
 const SearchContent = styled.div`
