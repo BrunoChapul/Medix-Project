@@ -1,5 +1,7 @@
+import Card from "../Ui/Card";
+
 function Date() {
-  return <div>Date</div>;
+  return <Card>Date</Card>;
 }
 
 export default Date;

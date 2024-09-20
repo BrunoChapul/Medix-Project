@@ -1,0 +1,40 @@
+{
+  "doctors": [
+    {
+      "id": "ed43",
+      "drPicture": "https://i.pravatar.cc/100?u=zc",
+      "drName": "Rita Ora",
+      "service": "Dermatologist"
+    },
+    {
+      "id": "eg74",
+      "drPicture": "https://i.pravatar.cc/100?u=zzz",
+      "drName": "Adam Saleh",
+      "service": "Psychologist"
+    },
+    {
+      "id": "ab89",
+      "drPicture": "https://i.pravatar.cc/100?u=zz",
+      "drName": "Nick Jonas",
+      "service": "Alphaviruses"
+    },
+    {
+      "id": "i14c",
+      "drPicture": "https://i.pravatar.cc/100?u=zw",
+      "drName": "Harry Mack",
+      "service": "Neurology"
+    },
+    {
+      "id": "wbn9",
+      "drPicture": "https://i.pravatar.cc/100?u=br",
+      "drName": "Michael Lens",
+      "service": "Oftamologist"
+    },
+    {
+      "id": "gfb4",
+      "drPicture": "https://i.pravatar.cc/100?u=z",
+      "drName": "Bruno Chapul",
+      "service": "Urologist"
+    }
+  ]
+}

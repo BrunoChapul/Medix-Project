@@ -1,5 +1,7 @@
+import Card from "../Ui/Card";
+
 function Available() {
-  return <div>Availabre</div>;
+  return <Card>Availabre</Card>;
 }
 
 export default Available;

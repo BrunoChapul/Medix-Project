@@ -1,31 +1,34 @@
 // Temas
 import { ThemeProvider } from "styled-components";
-import theme from "./_assets/scripts/theme";
+import theme from "./_theme/theme";
 
 // Router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Containers
-import PageLayout from "./containers/PageLayout";
-import GlobalStyle from "./_assets/styles/GlobalStyle";
+import PageLayout from "./components/Protected/Protected";
+import GlobalStyle from "./_theme/GlobalStyle";
 
 // Components
-import Overview from "./pages/Overview";
-import BookingActivity from "./pages/BookingActivity";
+import Overview from "./pages/dashboard/Overview";
+import BookingActivity from "./pages/dashboard/BookingActivity";
 import PageNotFound from "./pages/PageNotFound";
+import Login from "./pages/auth/Login";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <BrowserRouter>
-        <PageLayout>
-          <Routes>
-            <Route path="overview" element={<Overview />} />
+        <Routes>
+          <Route path="login" element={<Login />} />
+          <Route path="*" element={<PageNotFound />} />
+
+          <Route element={<PageLayout />}>
             <Route path="activity" element={<BookingActivity />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-        </PageLayout>
+            <Route path="overview" element={<Overview />} />
+          </Route>
+        </Routes>
       </BrowserRouter>
     </ThemeProvider>
   );
